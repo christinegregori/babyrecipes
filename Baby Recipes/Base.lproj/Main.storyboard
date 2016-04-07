@@ -71,6 +71,9 @@
                                         <constraint firstItem="evs-w5-7Vk" firstAttribute="centerY" secondItem="BZz-1G-5fd" secondAttribute="centerY" id="pT9-jV-Tpm"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="Tgi-OD-aYk" kind="show" id="Q8I-Er-Cvk"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -83,6 +86,53 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y65-HT-EHn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1479" y="-337"/>
+        </scene>
+        <!--X - X age Recipes-->
+        <scene sceneID="7fW-yd-YeN">
+            <objects>
+                <tableViewController id="Tgi-OD-aYk" customClass="RecipeListViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="lWX-ag-lJ1">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="Z2f-6Y-joW">
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Z2f-6Y-joW" id="gk1-iq-exw">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recipe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xeY-cJ-1cJ">
+                                            <rect key="frame" x="16" y="11.5" width="52" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TIh-5S-fuh">
+                                            <rect key="frame" x="554" y="7" width="30" height="30"/>
+                                            <state key="normal" title="Add"/>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="TIh-5S-fuh" firstAttribute="centerY" secondItem="gk1-iq-exw" secondAttribute="centerY" id="BkX-pA-HZz"/>
+                                        <constraint firstItem="xeY-cJ-1cJ" firstAttribute="centerY" secondItem="gk1-iq-exw" secondAttribute="centerY" id="GKp-4n-dHo"/>
+                                        <constraint firstItem="xeY-cJ-1cJ" firstAttribute="leading" secondItem="gk1-iq-exw" secondAttribute="leadingMargin" constant="8" id="Zm2-Av-1N5"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="TIh-5S-fuh" secondAttribute="trailing" constant="8" id="uGz-kd-e4T"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Tgi-OD-aYk" id="URx-rS-bOF"/>
+                            <outlet property="delegate" destination="Tgi-OD-aYk" id="UST-ah-Oez"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="X - X age Recipes" id="dZy-xW-iOA"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nj5-K2-ag9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2164" y="-337"/>
         </scene>
     </scenes>
     <resources>
