@@ -9,11 +9,10 @@
 /* Begin PBXBuildFile section */
 		35B97FBC1CB5FB7600AE1FFA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B97FBB1CB5FB7600AE1FFA /* main.m */; };
 		35B97FBF1CB5FB7600AE1FFA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B97FBE1CB5FB7600AE1FFA /* AppDelegate.m */; };
-		35B97FC21CB5FB7600AE1FFA /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B97FC11CB5FB7600AE1FFA /* FirstViewController.m */; };
-		35B97FC51CB5FB7600AE1FFA /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B97FC41CB5FB7600AE1FFA /* SecondViewController.m */; };
 		35B97FC81CB5FB7600AE1FFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35B97FC61CB5FB7600AE1FFA /* Main.storyboard */; };
 		35B97FCA1CB5FB7600AE1FFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35B97FC91CB5FB7600AE1FFA /* Assets.xcassets */; };
 		35B97FCD1CB5FB7600AE1FFA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35B97FCB1CB5FB7600AE1FFA /* LaunchScreen.storyboard */; };
+		35B97FD91CB5FE1800AE1FFA /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B97FD81CB5FE1800AE1FFA /* HomeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,14 +20,12 @@
 		35B97FBB1CB5FB7600AE1FFA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		35B97FBD1CB5FB7600AE1FFA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		35B97FBE1CB5FB7600AE1FFA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		35B97FC01CB5FB7600AE1FFA /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		35B97FC11CB5FB7600AE1FFA /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		35B97FC31CB5FB7600AE1FFA /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		35B97FC41CB5FB7600AE1FFA /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		35B97FC71CB5FB7600AE1FFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		35B97FC91CB5FB7600AE1FFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		35B97FCC1CB5FB7600AE1FFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		35B97FCE1CB5FB7600AE1FFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		35B97FD71CB5FE1800AE1FFA /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		35B97FD81CB5FE1800AE1FFA /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,10 +60,8 @@
 			children = (
 				35B97FBD1CB5FB7600AE1FFA /* AppDelegate.h */,
 				35B97FBE1CB5FB7600AE1FFA /* AppDelegate.m */,
-				35B97FC01CB5FB7600AE1FFA /* FirstViewController.h */,
-				35B97FC11CB5FB7600AE1FFA /* FirstViewController.m */,
-				35B97FC31CB5FB7600AE1FFA /* SecondViewController.h */,
-				35B97FC41CB5FB7600AE1FFA /* SecondViewController.m */,
+				35B97FD71CB5FE1800AE1FFA /* HomeViewController.h */,
+				35B97FD81CB5FE1800AE1FFA /* HomeViewController.m */,
 				35B97FC61CB5FB7600AE1FFA /* Main.storyboard */,
 				35B97FC91CB5FB7600AE1FFA /* Assets.xcassets */,
 				35B97FCB1CB5FB7600AE1FFA /* LaunchScreen.storyboard */,
@@ -154,10 +149,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				35B97FC51CB5FB7600AE1FFA /* SecondViewController.m in Sources */,
 				35B97FBF1CB5FB7600AE1FFA /* AppDelegate.m in Sources */,
-				35B97FC21CB5FB7600AE1FFA /* FirstViewController.m in Sources */,
 				35B97FBC1CB5FB7600AE1FFA /* main.m in Sources */,
+				35B97FD91CB5FE1800AE1FFA /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +263,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Baby Recipes/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Christine-Gregori.Baby-Recipes";
@@ -280,6 +275,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Baby Recipes/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Christine-Gregori.Baby-Recipes";

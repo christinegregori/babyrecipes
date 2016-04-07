@@ -1,5 +1,5 @@
 //
-//  FirstViewController.h
+//  HomeViewController.h
 //  Baby Recipes
 //
 //  Created by Christine Gregori on 4/6/16.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FirstViewController : UIViewController
-
+@interface HomeViewController : UITableViewController
 
 @end
-
