@@ -121,6 +121,9 @@
                                         <constraint firstAttribute="trailingMargin" secondItem="TIh-5S-fuh" secondAttribute="trailing" constant="8" id="uGz-kd-e4T"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="tCi-xA-yfu" kind="show" id="xU9-UY-IbQ"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -133,6 +136,104 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nj5-K2-ag9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2164" y="-337"/>
+        </scene>
+        <!--Recipe-->
+        <scene sceneID="1gW-Vb-40x">
+            <objects>
+                <viewController id="tCi-xA-yfu" customClass="RecipeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="K1E-b6-Hkx"/>
+                        <viewControllerLayoutGuide type="bottom" id="Kf1-wM-pne"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jWO-8v-pwT">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" layoutMarginsFollowReadableWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uuL-14-ODe">
+                                <rect key="frame" x="20" y="64" width="560" height="487"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ubS-Tq-opd">
+                                        <rect key="frame" x="8" y="0.0" width="560" height="122"/>
+                                        <string key="text">"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatemelit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cq8-A7-8Mp" userLabel="Width View">
+                                        <rect key="frame" x="0.0" y="112" width="560" height="2"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="2" id="ECY-Nw-NoL"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ingredients" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ONo-Bm-KW7">
+                                        <rect key="frame" x="8" y="130" width="88.5" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="iWn-xE-Dhd">
+                                        <rect key="frame" x="8" y="159" width="78" height="62"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Ingredient" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZqY-WP-PoZ">
+                                                <rect key="frame" x="0.0" y="0.0" width="78" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lrO-om-I1R">
+                                                <rect key="frame" x="0.0" y="21" width="78" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X0f-W0-7pA">
+                                                <rect key="frame" x="0.0" y="41" width="78" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OnM-2H-Iul">
+                                        <rect key="frame" x="8" y="768.5" width="560" height="122"/>
+                                        <string key="text">"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatemelit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="cq8-A7-8Mp" secondAttribute="trailing" id="35N-W4-znl"/>
+                                    <constraint firstItem="cq8-A7-8Mp" firstAttribute="leading" secondItem="uuL-14-ODe" secondAttribute="leading" id="9A0-yT-uMq"/>
+                                    <constraint firstItem="iWn-xE-Dhd" firstAttribute="top" secondItem="ONo-Bm-KW7" secondAttribute="bottom" constant="8" symbolic="YES" id="TwT-jc-gmk"/>
+                                    <constraint firstItem="ONo-Bm-KW7" firstAttribute="top" secondItem="ubS-Tq-opd" secondAttribute="bottom" constant="8" id="Vd6-S7-qRg"/>
+                                    <constraint firstItem="OnM-2H-Iul" firstAttribute="leading" secondItem="uuL-14-ODe" secondAttribute="leadingMargin" id="ajk-zW-f8u"/>
+                                    <constraint firstItem="iWn-xE-Dhd" firstAttribute="leading" secondItem="uuL-14-ODe" secondAttribute="leadingMargin" id="bhD-ua-mQH"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="OnM-2H-Iul" secondAttribute="bottom" id="dfz-Uv-onX"/>
+                                    <constraint firstItem="ubS-Tq-opd" firstAttribute="top" secondItem="uuL-14-ODe" secondAttribute="top" id="eYz-l7-GgW"/>
+                                    <constraint firstItem="cq8-A7-8Mp" firstAttribute="top" secondItem="uuL-14-ODe" secondAttribute="top" constant="112" id="oQR-Lf-TYm"/>
+                                    <constraint firstItem="OnM-2H-Iul" firstAttribute="width" secondItem="cq8-A7-8Mp" secondAttribute="width" id="q4a-wN-F7w"/>
+                                    <constraint firstItem="ubS-Tq-opd" firstAttribute="leading" secondItem="uuL-14-ODe" secondAttribute="leadingMargin" id="r2s-35-qDu"/>
+                                    <constraint firstItem="ONo-Bm-KW7" firstAttribute="leading" secondItem="uuL-14-ODe" secondAttribute="leadingMargin" id="tn3-Jd-Mi6"/>
+                                    <constraint firstItem="OnM-2H-Iul" firstAttribute="top" secondItem="iWn-xE-Dhd" secondAttribute="bottom" constant="8" symbolic="YES" id="v33-yz-Wp2"/>
+                                    <constraint firstItem="ubS-Tq-opd" firstAttribute="width" secondItem="cq8-A7-8Mp" secondAttribute="width" id="zGT-7n-hA6"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Kf1-wM-pne" firstAttribute="top" secondItem="uuL-14-ODe" secondAttribute="bottom" id="861-Qn-ioy"/>
+                            <constraint firstItem="uuL-14-ODe" firstAttribute="top" secondItem="K1E-b6-Hkx" secondAttribute="bottom" id="B4i-5e-PR7"/>
+                            <constraint firstItem="cq8-A7-8Mp" firstAttribute="leading" secondItem="jWO-8v-pwT" secondAttribute="leadingMargin" id="CC1-h2-2QU"/>
+                            <constraint firstItem="uuL-14-ODe" firstAttribute="leading" secondItem="jWO-8v-pwT" secondAttribute="leadingMargin" id="SQI-G4-9rt"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="uuL-14-ODe" secondAttribute="trailing" id="a8h-wA-d8S"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cq8-A7-8Mp" secondAttribute="trailing" id="fDm-kd-ieg"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Recipe" id="9cZ-sO-Wda"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9He-nQ-rL3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3044" y="-6"/>
         </scene>
     </scenes>
     <resources>

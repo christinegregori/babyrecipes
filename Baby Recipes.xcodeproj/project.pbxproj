@@ -14,6 +14,7 @@
 		35B97FCD1CB5FB7600AE1FFA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35B97FCB1CB5FB7600AE1FFA /* LaunchScreen.storyboard */; };
 		35B97FD91CB5FE1800AE1FFA /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B97FD81CB5FE1800AE1FFA /* HomeViewController.m */; };
 		35B97FE21CB6017B00AE1FFA /* RecipeListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B97FE11CB6017B00AE1FFA /* RecipeListViewController.m */; };
+		35B97FE51CB6036500AE1FFA /* RecipeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B97FE41CB6036500AE1FFA /* RecipeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		35B97FD81CB5FE1800AE1FFA /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		35B97FE01CB6017B00AE1FFA /* RecipeListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipeListViewController.h; sourceTree = "<group>"; };
 		35B97FE11CB6017B00AE1FFA /* RecipeListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipeListViewController.m; sourceTree = "<group>"; };
+		35B97FE31CB6036500AE1FFA /* RecipeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipeViewController.h; sourceTree = "<group>"; };
+		35B97FE41CB6036500AE1FFA /* RecipeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +70,8 @@
 				35B97FD81CB5FE1800AE1FFA /* HomeViewController.m */,
 				35B97FE01CB6017B00AE1FFA /* RecipeListViewController.h */,
 				35B97FE11CB6017B00AE1FFA /* RecipeListViewController.m */,
+				35B97FE31CB6036500AE1FFA /* RecipeViewController.h */,
+				35B97FE41CB6036500AE1FFA /* RecipeViewController.m */,
 				35B97FC61CB5FB7600AE1FFA /* Main.storyboard */,
 				35B97FC91CB5FB7600AE1FFA /* Assets.xcassets */,
 				35B97FCB1CB5FB7600AE1FFA /* LaunchScreen.storyboard */,
@@ -158,6 +163,7 @@
 				35B97FBF1CB5FB7600AE1FFA /* AppDelegate.m in Sources */,
 				35B97FBC1CB5FB7600AE1FFA /* main.m in Sources */,
 				35B97FD91CB5FE1800AE1FFA /* HomeViewController.m in Sources */,
+				35B97FE51CB6036500AE1FFA /* RecipeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
