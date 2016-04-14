@@ -54,6 +54,7 @@
     // build store
     NSPersistentStoreCoordinator *coordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:[self managedObjectModel]];
     
+#define stringify(x) @#x
     NSURL *sharedProjectFolderURL = [[NSURL fileURLWithPath:stringify(PROJECT_PATH)] URLByAppendingPathComponent:@"Shared"];
     NSURL *url = [sharedProjectFolderURL URLByAppendingPathComponent:StoreName];
     if (![coordinator addPersistentStoreWithType:NSSQLiteStoreType
@@ -72,7 +73,6 @@
         // Report any error we got.
         NSMutableDictionary *dict = [NSMutableDictionary dictionary];
         dict[NSLocalizedDescriptionKey] = @"Failed to initialize the application's saved data";
-        dict[NSLocalizedFailureReasonErrorKey] = failureReason;
         if (error) {
             dict[NSUnderlyingErrorKey] = error;
         }
