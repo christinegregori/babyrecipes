@@ -339,7 +339,7 @@
         <scene sceneID="hIz-AP-VOD">
             <objects>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
-                <viewController title="Recipe Manager" showSeguePresentationStyle="single" id="XfG-lQ-9wD" customClass="ViewController" sceneMemberID="viewController">
+                <viewController title="Recipe Manager" showSeguePresentationStyle="single" id="XfG-lQ-9wD" customClass="RecipeManagerViewController" sceneMemberID="viewController">
                     <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl">
                         <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -462,6 +462,11 @@
                         </constraints>
                     </view>
                 </viewController>
+                <arrayController mode="entity" entityName="Recipe" automaticallyPreparesContent="YES" automaticallyRearrangesObjects="YES" id="UWu-ni-JSo" userLabel="Recipes Controller">
+                    <connections>
+                        <binding destination="XfG-lQ-9wD" name="managedObjectContext" keyPath="representedObject" id="NN8-Zd-tOT"/>
+                    </connections>
+                </arrayController>
             </objects>
             <point key="canvasLocation" x="75" y="655"/>
         </scene>

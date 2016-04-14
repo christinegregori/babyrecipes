@@ -6,9 +6,9 @@
 //  Copyright © 2016 Christine Gregori. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "RecipeManagerViewController.h"
 
-@implementation ViewController
+@implementation RecipeManagerViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
