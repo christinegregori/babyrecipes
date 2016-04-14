@@ -1,4 +1,29 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model name="untitled.xcdatamodel" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
-    <elements/>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10171" systemVersion="15D21" minimumToolsVersion="Automatic">
+    <entity name="AgeRange" syncable="YES">
+        <attribute name="name" attributeType="String" indexed="YES" syncable="YES"/>
+        <relationship name="recipes" optional="YES" toMany="YES" deletionRule="Deny" destinationEntity="Recipe" inverseName="ageranges" inverseEntity="Recipe" syncable="YES"/>
+    </entity>
+    <entity name="Category" syncable="YES">
+        <attribute name="name" indexed="YES" syncable="YES"/>
+        <relationship name="recipes" optional="YES" toMany="YES" deletionRule="Deny" destinationEntity="Recipe" inverseName="categories" inverseEntity="Recipe" syncable="YES"/>
+    </entity>
+    <entity name="Ingredient" syncable="YES">
+        <attribute name="name" attributeType="String" indexed="YES" syncable="YES"/>
+        <relationship name="recipes" optional="YES" toMany="YES" deletionRule="Deny" destinationEntity="Recipe" inverseName="ingredients" inverseEntity="Recipe" syncable="YES"/>
+    </entity>
+    <entity name="Recipe" syncable="YES">
+        <attribute name="blurb" attributeType="String" syncable="YES"/>
+        <attribute name="name" attributeType="String" syncable="YES"/>
+        <attribute name="steps" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="ageranges" toMany="YES" deletionRule="Nullify" destinationEntity="AgeRange" inverseName="recipes" inverseEntity="AgeRange" syncable="YES"/>
+        <relationship name="categories" toMany="YES" deletionRule="Nullify" destinationEntity="Category" inverseName="recipes" inverseEntity="Category" syncable="YES"/>
+        <relationship name="ingredients" toMany="YES" deletionRule="Nullify" destinationEntity="Ingredient" inverseName="recipes" inverseEntity="Ingredient" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Recipe" positionX="-297" positionY="-18" width="128" height="133"/>
+        <element name="Ingredient" positionX="7" positionY="116" width="128" height="73"/>
+        <element name="Category" positionX="9" positionY="27" width="128" height="73"/>
+        <element name="AgeRange" positionX="7" positionY="-63" width="128" height="73"/>
+    </elements>
 </model>

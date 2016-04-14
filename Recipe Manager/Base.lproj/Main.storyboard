@@ -344,18 +344,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <splitView arrangesAllSubviews="NO" dividerStyle="paneSplitter" vertical="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SIr-W0-63W">
+                            <splitView arrangesAllSubviews="NO" dividerStyle="thin" translatesAutoresizingMaskIntoConstraints="NO" id="SIr-W0-63W">
                                 <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
                                 <subviews>
                                     <scrollView fixedFrame="YES" autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" id="v1K-PU-w9o">
-                                        <rect key="frame" x="0.0" y="0.0" width="236.5" height="270"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="480" height="134.5"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <clipView key="contentView" ambiguous="YES" id="9lU-RI-OqB">
-                                            <rect key="frame" x="1" y="0.0" width="234.5" height="269"/>
+                                            <rect key="frame" x="1" y="0.0" width="478" height="133.5"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <subviews>
                                                 <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" rowSizeStyle="automatic" headerView="nmS-qW-6KP" viewBased="YES" id="evR-dp-JS8">
-                                                    <rect key="frame" x="0.0" y="0.0" width="234.5" height="246"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="478" height="110.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <size key="intercellSpacing" width="3" height="2"/>
                                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -393,7 +393,7 @@
                                                                 </tableCellView>
                                                             </prototypeCellViews>
                                                         </tableColumn>
-                                                        <tableColumn width="112.5" minWidth="40" maxWidth="1000" id="WEE-Gw-WZ3">
+                                                        <tableColumn width="356" minWidth="40" maxWidth="1000" id="WEE-Gw-WZ3">
                                                             <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border">
                                                                 <font key="font" metaFont="smallSystem"/>
                                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -407,7 +407,7 @@
                                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                             <prototypeCellViews>
                                                                 <tableCellView id="NOr-ui-PSE">
-                                                                    <rect key="frame" x="120" y="1" width="112.5" height="17"/>
+                                                                    <rect key="frame" x="120" y="1" width="356" height="17"/>
                                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                                     <subviews>
                                                                         <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Agm-7G-VA6">
@@ -434,17 +434,17 @@
                                             <rect key="frame" x="1" y="253" width="152" height="16"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </scroller>
-                                        <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="gEZ-BE-dwX">
+                                        <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="NO" id="gEZ-BE-dwX">
                                             <rect key="frame" x="224" y="17" width="15" height="102"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </scroller>
                                         <tableHeaderView key="headerView" id="nmS-qW-6KP">
-                                            <rect key="frame" x="0.0" y="0.0" width="234.5" height="23"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="478" height="23"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableHeaderView>
                                     </scrollView>
                                     <customView fixedFrame="YES" id="eap-xN-jTx">
-                                        <rect key="frame" x="246.5" y="0.0" width="233.5" height="270"/>
+                                        <rect key="frame" x="0.0" y="135.5" width="480" height="134.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </customView>
                                 </subviews>
