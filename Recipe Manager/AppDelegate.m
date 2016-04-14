@@ -32,12 +32,6 @@
 @synthesize managedObjectModel = _managedObjectModel;
 @synthesize managedObjectContext = _managedObjectContext;
 
-- (NSURL *)applicationDocumentsDirectory {
-    // The directory the application uses to store the Core Data store file. This code uses a directory named "Christine-Gregori.Recipe_Manager" in the user's Application Support directory.
-    NSURL *sharedProjectFolderURL = [[NSURL fileURLWithPath:PROJECT_PATH] URLByAppendingPathComponent:@"Shared"];
-    return [sharedProjectFolderURL URLByAppendingPathComponent:DBName];
-}
-
 - (NSManagedObjectModel *)managedObjectModel {
     // The managed object model for the application. It is a fatal error for the application not to be able to find and load its model.
     if (_managedObjectModel) {
@@ -55,34 +49,26 @@
         return _persistentStoreCoordinator;
     }
     
-    NSFileManager *fileManager = [NSFileManager defaultManager];
-    NSURL *applicationDocumentsDirectory = [self applicationDocumentsDirectory];
-    BOOL shouldFail = NO;
     NSError *error = nil;
-    NSString *failureReason = @"There was an error creating or loading the application's saved data.";
     
-    // Make sure the application files directory is there
-    NSDictionary *properties = [applicationDocumentsDirectory resourceValuesForKeys:@[NSURLIsDirectoryKey] error:&error];
-    if (properties) {
-        if (![properties[NSURLIsDirectoryKey] boolValue]) {
-            failureReason = [NSString stringWithFormat:@"Expected a folder to store application data, found a file (%@).", [applicationDocumentsDirectory path]];
-            shouldFail = YES;
-        }
-    } else if ([error code] == NSFileReadNoSuchFileError) {
-        error = nil;
-        [fileManager createDirectoryAtPath:[applicationDocumentsDirectory path] withIntermediateDirectories:YES attributes:nil error:&error];
+    // build store
+    NSPersistentStoreCoordinator *coordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:[self managedObjectModel]];
+    
+    NSURL *sharedProjectFolderURL = [[NSURL fileURLWithPath:stringify(PROJECT_PATH)] URLByAppendingPathComponent:@"Shared"];
+    NSURL *url = [sharedProjectFolderURL URLByAppendingPathComponent:StoreName];
+    if (![coordinator addPersistentStoreWithType:NSSQLiteStoreType
+                                   configuration:nil
+                                             URL:url
+                                         options:@{
+                                                   NSMigratePersistentStoresAutomaticallyOption: @YES,
+                                                   NSInferMappingModelAutomaticallyOption: @YES
+                                                   }
+                                           error:&error]) {
+        coordinator = nil;
     }
+    _persistentStoreCoordinator = coordinator;
     
-    if (!shouldFail && !error) {
-        NSPersistentStoreCoordinator *coordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:[self managedObjectModel]];
-        NSURL *url = [applicationDocumentsDirectory URLByAppendingPathComponent:@"OSXCoreDataObjC.storedata"];
-        if (![coordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:url options:nil error:&error]) {
-            coordinator = nil;
-        }
-        _persistentStoreCoordinator = coordinator;
-    }
-    
-    if (shouldFail || error) {
+    if (error) {
         // Report any error we got.
         NSMutableDictionary *dict = [NSMutableDictionary dictionary];
         dict[NSLocalizedDescriptionKey] = @"Failed to initialize the application's saved data";

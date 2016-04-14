@@ -9,8 +9,8 @@
 #ifndef Constants_h
 #define Constants_h
 
-#define DBName @"recipes.recipes"
 #define MOMDName @"Recipes"
+#define StoreName @"recipes.storedata"
 
 
 #endif /* Constants_h */
