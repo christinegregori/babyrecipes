@@ -465,6 +465,7 @@
                 <arrayController mode="entity" entityName="Recipe" automaticallyPreparesContent="YES" automaticallyRearrangesObjects="YES" id="UWu-ni-JSo" userLabel="Recipes Controller">
                     <connections>
                         <binding destination="XfG-lQ-9wD" name="managedObjectContext" keyPath="representedObject" id="NN8-Zd-tOT"/>
+                        <outlet property="content" destination="evR-dp-JS8" id="zzo-PO-n4e"/>
                     </connections>
                 </arrayController>
             </objects>

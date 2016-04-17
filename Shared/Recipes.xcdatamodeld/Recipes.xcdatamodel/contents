@@ -5,7 +5,7 @@
         <relationship name="recipes" optional="YES" toMany="YES" deletionRule="Deny" destinationEntity="Recipe" inverseName="ageranges" inverseEntity="Recipe" syncable="YES"/>
     </entity>
     <entity name="Category" syncable="YES">
-        <attribute name="name" indexed="YES" syncable="YES"/>
+        <attribute name="name" attributeType="String" indexed="YES" syncable="YES"/>
         <relationship name="recipes" optional="YES" toMany="YES" deletionRule="Deny" destinationEntity="Recipe" inverseName="categories" inverseEntity="Recipe" syncable="YES"/>
     </entity>
     <entity name="Ingredient" syncable="YES">
@@ -21,9 +21,9 @@
         <relationship name="ingredients" toMany="YES" deletionRule="Nullify" destinationEntity="Ingredient" inverseName="recipes" inverseEntity="Ingredient" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Recipe" positionX="-297" positionY="-18" width="128" height="133"/>
-        <element name="Ingredient" positionX="7" positionY="116" width="128" height="73"/>
-        <element name="Category" positionX="9" positionY="27" width="128" height="73"/>
         <element name="AgeRange" positionX="7" positionY="-63" width="128" height="73"/>
+        <element name="Category" positionX="9" positionY="27" width="128" height="75"/>
+        <element name="Ingredient" positionX="7" positionY="116" width="128" height="73"/>
+        <element name="Recipe" positionX="-297" positionY="-18" width="128" height="133"/>
     </elements>
 </model>
