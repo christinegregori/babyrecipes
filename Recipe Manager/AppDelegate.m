@@ -58,8 +58,9 @@
     // build store
     NSPersistentStoreCoordinator *coordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:[self managedObjectModel]];
     
-#define stringify(x) @#x
-    NSURL *sharedProjectFolderURL = [[NSURL fileURLWithPath:stringify(PROJECT_PATH)] URLByAppendingPathComponent:@"Shared"];
+//#define stringify(x) @#x
+    NSString *projectPath = PROJECT_PATH;
+    NSURL *sharedProjectFolderURL = [[[NSURL fileURLWithPath:projectPath] URLByDeletingLastPathComponent] URLByAppendingPathComponent:@"Shared"];
     NSURL *url = [sharedProjectFolderURL URLByAppendingPathComponent:StoreName];
     if (![coordinator addPersistentStoreWithType:NSSQLiteStoreType
                                    configuration:nil
