@@ -21,9 +21,6 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     // Insert code here to initialize your application
-    
-//    RecipeManagerViewController *vc = (__kindof NSViewController *)[[[NSApplication sharedApplication] mainWindow] contentViewController];
-//    vc.representedObject = self.managedObjectContext;
 }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
@@ -58,7 +55,6 @@
     // build store
     NSPersistentStoreCoordinator *coordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:[self managedObjectModel]];
     
-//#define stringify(x) @#x
     NSString *projectPath = PROJECT_PATH;
     NSURL *sharedProjectFolderURL = [[[NSURL fileURLWithPath:projectPath] URLByDeletingLastPathComponent] URLByAppendingPathComponent:@"Shared"];
     NSURL *url = [sharedProjectFolderURL URLByAppendingPathComponent:StoreName];

@@ -9,6 +9,7 @@
 #import "RecipeManagerWindowController.h"
 
 #import "AppDelegate.h"
+#import "RecipeManagerViewController.h"
 
 @interface RecipeManagerWindowController ()
 
@@ -21,6 +22,13 @@
     
     AppDelegate *delegate = [[NSApplication sharedApplication] delegate];
     self.managedObjectContext = delegate.managedObjectContext;
+    
+    RecipeManagerViewController *vc = (__kindof NSViewController *)self.contentViewController;
+    vc.representedObject = self.managedObjectContext;
+}
+
+- (NSUndoManager *)windowWillReturnUndoManager:(NSWindow *)window {
+    return self.managedObjectContext.undoManager;
 }
 
 @end
