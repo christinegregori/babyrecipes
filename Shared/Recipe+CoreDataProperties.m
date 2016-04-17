@@ -16,6 +16,7 @@
 @dynamic blurb;
 @dynamic name;
 @dynamic steps;
+@dynamic dateUpdated;
 @dynamic ageranges;
 @dynamic categories;
 @dynamic ingredients;

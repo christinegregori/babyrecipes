@@ -52,7 +52,7 @@
                                     <items>
                                         <menuItem title="Save…" keyEquivalent="s" id="pxx-59-PXV">
                                             <connections>
-                                                <action selector="saveDocument:" target="Ady-hI-5gd" id="teZ-XB-qJY"/>
+                                                <action selector="saveAction:" target="Voe-Tx-rLC" id="BOW-ng-C6i"/>
                                             </connections>
                                         </menuItem>
                                     </items>

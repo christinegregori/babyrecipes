@@ -23,6 +23,7 @@
 		350333921CC3FD7300E7129D /* Category+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 350333821CC3FD7300E7129D /* Category+CoreDataProperties.m */; };
 		350333931CC3FD7300E7129D /* Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 350333841CC3FD7300E7129D /* Category.m */; };
 		350333941CC3FD7300E7129D /* Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 350333841CC3FD7300E7129D /* Category.m */; };
+		350333981CC402B500E7129D /* RecipeManagerWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 350333971CC402B500E7129D /* RecipeManagerWindowController.m */; };
 		35B97FBC1CB5FB7600AE1FFA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B97FBB1CB5FB7600AE1FFA /* main.m */; };
 		35B97FBF1CB5FB7600AE1FFA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B97FBE1CB5FB7600AE1FFA /* AppDelegate.m */; };
 		35B97FC81CB5FB7600AE1FFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35B97FC61CB5FB7600AE1FFA /* Main.storyboard */; };
@@ -57,6 +58,8 @@
 		350333821CC3FD7300E7129D /* Category+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Category+CoreDataProperties.m"; path = "Shared/Category+CoreDataProperties.m"; sourceTree = "<group>"; };
 		350333831CC3FD7300E7129D /* Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Category.h; path = Shared/Category.h; sourceTree = "<group>"; };
 		350333841CC3FD7300E7129D /* Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Category.m; path = Shared/Category.m; sourceTree = "<group>"; };
+		350333961CC402B500E7129D /* RecipeManagerWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipeManagerWindowController.h; sourceTree = "<group>"; };
+		350333971CC402B500E7129D /* RecipeManagerWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipeManagerWindowController.m; sourceTree = "<group>"; };
 		35B97FB71CB5FB7600AE1FFA /* Baby Recipes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Baby Recipes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		35B97FBB1CB5FB7600AE1FFA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		35B97FBD1CB5FB7600AE1FFA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -178,6 +181,8 @@
 			children = (
 				35F252FF1CBC911D003D249A /* AppDelegate.h */,
 				35F253001CBC911D003D249A /* AppDelegate.m */,
+				350333961CC402B500E7129D /* RecipeManagerWindowController.h */,
+				350333971CC402B500E7129D /* RecipeManagerWindowController.m */,
 				35F253051CBC911D003D249A /* RecipeManagerViewController.h */,
 				35F253061CBC911D003D249A /* RecipeManagerViewController.m */,
 				35F2530B1CBC911D003D249A /* Assets.xcassets */,
@@ -339,6 +344,7 @@
 				3503338E1CC3FD7300E7129D /* Recipe+CoreDataProperties.m in Sources */,
 				35F253241CBCA007003D249A /* Recipes.xcdatamodeld in Sources */,
 				350333881CC3FD7300E7129D /* AgeRange.m in Sources */,
+				350333981CC402B500E7129D /* RecipeManagerWindowController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

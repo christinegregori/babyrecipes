@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 
-@class AgeRange, Ingredient;
+@class AgeRange, Category, Ingredient;
 
 NS_ASSUME_NONNULL_BEGIN
 

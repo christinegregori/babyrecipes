@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 
 #import "Constants.h"
+#import "RecipeManagerViewController.h"
 
 @interface AppDelegate ()
 
@@ -20,6 +21,9 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     // Insert code here to initialize your application
+    
+    RecipeManagerViewController *vc = (__kindof NSViewController *)[[[NSApplication sharedApplication] mainWindow] contentViewController];
+    vc.representedObject = self.managedObjectContext;
 }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {

@@ -18,8 +18,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nullable, nonatomic, retain) NSString *blurb;
 @property (nullable, nonatomic, retain) NSString *name;
 @property (nullable, nonatomic, retain) NSString *steps;
+@property (nullable, nonatomic, retain) NSDate *dateUpdated;
 @property (nullable, nonatomic, retain) NSSet<AgeRange *> *ageranges;
-@property (nullable, nonatomic, retain) NSSet<NSManagedObject *> *categories;
+@property (nullable, nonatomic, retain) NSSet<Category *> *categories;
 @property (nullable, nonatomic, retain) NSSet<Ingredient *> *ingredients;
 
 @end
@@ -31,10 +32,10 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)addAgeranges:(NSSet<AgeRange *> *)values;
 - (void)removeAgeranges:(NSSet<AgeRange *> *)values;
 
-- (void)addCategoriesObject:(NSManagedObject *)value;
-- (void)removeCategoriesObject:(NSManagedObject *)value;
-- (void)addCategories:(NSSet<NSManagedObject *> *)values;
-- (void)removeCategories:(NSSet<NSManagedObject *> *)values;
+- (void)addCategoriesObject:(Category *)value;
+- (void)removeCategoriesObject:(Category *)value;
+- (void)addCategories:(NSSet<Category *> *)values;
+- (void)removeCategories:(NSSet<Category *> *)values;
 
 - (void)addIngredientsObject:(Ingredient *)value;
 - (void)removeIngredientsObject:(Ingredient *)value;

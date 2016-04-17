@@ -10,8 +10,14 @@
 #import "AgeRange.h"
 #import "Ingredient.h"
 
+#import "Recipe+CoreDataProperties.h"
+
 @implementation Recipe
 
-// Insert code here to add functionality to your managed object subclass
+- (void)willSave {
+    [super willSave];
+    
+    self.dateUpdated = [NSDate date];
+}
 
 @end
