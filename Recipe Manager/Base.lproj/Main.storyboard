@@ -361,7 +361,7 @@
                                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                     <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
                                                     <tableColumns>
-                                                        <tableColumn width="351.73046875" minWidth="40" maxWidth="1000" id="0eH-pT-Yci">
+                                                        <tableColumn editable="NO" width="351.73046875" minWidth="40" maxWidth="1000" id="0eH-pT-Yci">
                                                             <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" title="Name">
                                                                 <font key="font" metaFont="smallSystem"/>
                                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -375,7 +375,7 @@
                                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                             <prototypeCellViews>
                                                                 <tableCellView id="CPt-Ec-Q1i">
-                                                                    <rect key="frame" x="1" y="1" width="351.5" height="17"/>
+                                                                    <rect key="frame" x="1" y="1" width="352" height="17"/>
                                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                                     <subviews>
                                                                         <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RRR-Be-WI8">
@@ -392,8 +392,15 @@
                                                                     </connections>
                                                                 </tableCellView>
                                                             </prototypeCellViews>
+                                                            <connections>
+                                                                <binding destination="UWu-ni-JSo" name="value" keyPath="arrangedObjects.name" id="2LK-bW-MJw">
+                                                                    <dictionary key="options">
+                                                                        <bool key="NSAllowsEditingMultipleValuesSelection" value="NO"/>
+                                                                    </dictionary>
+                                                                </binding>
+                                                            </connections>
                                                         </tableColumn>
-                                                        <tableColumn width="120.5" minWidth="40" maxWidth="1000" id="WEE-Gw-WZ3">
+                                                        <tableColumn editable="NO" width="120.5" minWidth="40" maxWidth="1000" id="WEE-Gw-WZ3">
                                                             <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" title="Date Updated">
                                                                 <font key="font" metaFont="smallSystem"/>
                                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -407,7 +414,7 @@
                                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                             <prototypeCellViews>
                                                                 <tableCellView id="NOr-ui-PSE">
-                                                                    <rect key="frame" x="355.5" y="1" width="120.5" height="17"/>
+                                                                    <rect key="frame" x="355.5" y="1" width="121" height="17"/>
                                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                                     <subviews>
                                                                         <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Agm-7G-VA6">
@@ -425,6 +432,13 @@
                                                                     </connections>
                                                                 </tableCellView>
                                                             </prototypeCellViews>
+                                                            <connections>
+                                                                <binding destination="UWu-ni-JSo" name="value" keyPath="arrangedObjects.dateUpdated" id="QjB-ba-3Iq">
+                                                                    <dictionary key="options">
+                                                                        <bool key="NSConditionallySetsEditable" value="YES"/>
+                                                                    </dictionary>
+                                                                </binding>
+                                                            </connections>
                                                         </tableColumn>
                                                     </tableColumns>
                                                 </tableView>
@@ -432,7 +446,7 @@
                                             <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                         </clipView>
                                         <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="Eir-Kw-9bg">
-                                            <rect key="frame" x="1" y="117.5" width="478" height="16"/>
+                                            <rect key="frame" x="1" y="117" width="478" height="16"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </scroller>
                                         <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="NO" id="gEZ-BE-dwX">
@@ -463,7 +477,7 @@
                         </constraints>
                     </view>
                 </viewController>
-                <arrayController mode="entity" entityName="Recipe" automaticallyPreparesContent="YES" automaticallyRearrangesObjects="YES" id="UWu-ni-JSo" userLabel="Recipes Controller">
+                <arrayController mode="entity" entityName="Recipe" automaticallyPreparesContent="YES" automaticallyRearrangesObjects="YES" id="UWu-ni-JSo" userLabel="RecipesArrayController">
                     <connections>
                         <binding destination="XfG-lQ-9wD" name="managedObjectContext" keyPath="representedObject" id="NN8-Zd-tOT"/>
                         <outlet property="content" destination="evR-dp-JS8" id="zzo-PO-n4e"/>
