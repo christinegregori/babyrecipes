@@ -66,7 +66,8 @@
                                              URL:url
                                          options:@{
                                                    NSMigratePersistentStoresAutomaticallyOption: @YES,
-                                                   NSInferMappingModelAutomaticallyOption: @YES
+                                                   NSInferMappingModelAutomaticallyOption: @YES,
+                                                   NSSQLitePragmasOption:@{@"journal_mode":@"DELETE"}, // this makes it so the db is just one file
                                                    }
                                            error:&error]) {
         coordinator = nil;

@@ -9,5 +9,5 @@
 #import <Cocoa/Cocoa.h>
 
 @interface RecipeManagerWindowController : NSWindowController
-
+@property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 @end
