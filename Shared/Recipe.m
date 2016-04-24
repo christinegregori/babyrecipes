@@ -14,10 +14,19 @@
 
 @implementation Recipe
 
+- (void)awakeFromInsert {
+    [super awakeFromInsert];
+
+    // this way a recipe always has an dateUpdated
+    [self setPrimitiveValue:[NSDate date] forKey:NSStringFromSelector(@selector(dateUpdated))];
+}
+
 - (void)willSave {
     [super willSave];
     
-    self.dateUpdated = [NSDate date];
+    if(![self isDeleted] && self.changedValues[NSStringFromSelector(@selector(dateUpdated))] == nil) {
+        self.dateUpdated = [NSDate date];
+    }
 }
 
 @end

@@ -24,7 +24,7 @@
     self.managedObjectContext = delegate.managedObjectContext;
     
     RecipeManagerViewController *vc = (__kindof NSViewController *)self.contentViewController;
-    vc.representedObject = self.managedObjectContext;
+    vc.managedObjectContext = self.managedObjectContext;
 }
 
 - (NSUndoManager *)windowWillReturnUndoManager:(NSWindow *)window {

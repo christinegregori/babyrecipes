@@ -341,21 +341,21 @@
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
                 <viewController title="Recipe Manager" showSeguePresentationStyle="single" id="XfG-lQ-9wD" customClass="RecipeManagerViewController" sceneMemberID="viewController">
                     <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                        <rect key="frame" x="0.0" y="0.0" width="509" height="539"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <splitView arrangesAllSubviews="NO" autosaveName="recipeManagerSplitView" dividerStyle="thin" translatesAutoresizingMaskIntoConstraints="NO" id="SIr-W0-63W">
-                                <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                                <rect key="frame" x="0.0" y="0.0" width="509" height="539"/>
                                 <subviews>
                                     <scrollView fixedFrame="YES" autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" id="v1K-PU-w9o">
-                                        <rect key="frame" x="0.0" y="0.0" width="480" height="134.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="509" height="142.5"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <clipView key="contentView" ambiguous="YES" id="9lU-RI-OqB">
-                                            <rect key="frame" x="1" y="0.0" width="478" height="133.5"/>
+                                            <rect key="frame" x="1" y="0.0" width="507" height="141.5"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <subviews>
                                                 <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" alternatingRowBackgroundColors="YES" columnSelection="YES" multipleSelection="NO" autosaveName="recipeManagerTableView" rowSizeStyle="automatic" headerView="nmS-qW-6KP" viewBased="YES" id="evR-dp-JS8">
-                                                    <rect key="frame" x="0.0" y="0.0" width="478" height="110.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="507" height="118.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <size key="intercellSpacing" width="3" height="2"/>
                                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -375,7 +375,7 @@
                                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                             <prototypeCellViews>
                                                                 <tableCellView id="CPt-Ec-Q1i">
-                                                                    <rect key="frame" x="1" y="1" width="352" height="17"/>
+                                                                    <rect key="frame" x="1" y="1" width="351.5" height="17"/>
                                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                                     <subviews>
                                                                         <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RRR-Be-WI8">
@@ -400,7 +400,7 @@
                                                                 </binding>
                                                             </connections>
                                                         </tableColumn>
-                                                        <tableColumn editable="NO" width="120.5" minWidth="40" maxWidth="1000" id="WEE-Gw-WZ3">
+                                                        <tableColumn editable="NO" width="149.5" minWidth="40" maxWidth="1000" id="WEE-Gw-WZ3">
                                                             <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" title="Date Updated">
                                                                 <font key="font" metaFont="smallSystem"/>
                                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -414,7 +414,7 @@
                                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                             <prototypeCellViews>
                                                                 <tableCellView id="NOr-ui-PSE">
-                                                                    <rect key="frame" x="355.5" y="1" width="121" height="17"/>
+                                                                    <rect key="frame" x="355.5" y="1" width="149.5" height="17"/>
                                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                                     <subviews>
                                                                         <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Agm-7G-VA6">
@@ -454,12 +454,12 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                         </scroller>
                                         <tableHeaderView key="headerView" id="nmS-qW-6KP">
-                                            <rect key="frame" x="0.0" y="0.0" width="478" height="23"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="507" height="23"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableHeaderView>
                                     </scrollView>
                                     <customView fixedFrame="YES" id="eap-xN-jTx">
-                                        <rect key="frame" x="0.0" y="135.5" width="480" height="134.5"/>
+                                        <rect key="frame" x="0.0" y="143.5" width="509" height="395.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </customView>
                                 </subviews>
@@ -479,12 +479,12 @@
                 </viewController>
                 <arrayController mode="entity" entityName="Recipe" automaticallyPreparesContent="YES" automaticallyRearrangesObjects="YES" id="UWu-ni-JSo" userLabel="RecipesArrayController">
                     <connections>
-                        <binding destination="XfG-lQ-9wD" name="managedObjectContext" keyPath="representedObject" id="NN8-Zd-tOT"/>
+                        <binding destination="XfG-lQ-9wD" name="managedObjectContext" keyPath="managedObjectContext" id="l5S-Yh-7XK"/>
                         <outlet property="content" destination="evR-dp-JS8" id="zzo-PO-n4e"/>
                     </connections>
                 </arrayController>
             </objects>
-            <point key="canvasLocation" x="75" y="655"/>
+            <point key="canvasLocation" x="89.5" y="789.5"/>
         </scene>
     </scenes>
 </document>

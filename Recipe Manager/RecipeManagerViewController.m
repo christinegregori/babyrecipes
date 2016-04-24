@@ -8,6 +8,11 @@
 
 #import "RecipeManagerViewController.h"
 
+#import "AgeRange.h"
+#import "Category.h"
+#import "Ingredient.h"
+#import "Recipe.h"
+
 @implementation RecipeManagerViewController
 
 - (void)viewDidLoad {
@@ -16,10 +21,32 @@
     // Do any additional setup after loading the view.
 }
 
-- (void)setRepresentedObject:(id)representedObject {
-    [super setRepresentedObject:representedObject];
-
-    // Update the view, if already loaded.
+- (void)setManagedObjectContext:(NSManagedObjectContext *)managedObjectContext {
+    _managedObjectContext = managedObjectContext;
+    
+    // add a test object
+    AgeRange *age = [NSEntityDescription insertNewObjectForEntityForName:@"AgeRange" inManagedObjectContext:managedObjectContext];
+    age.name = @"6-12 months";
+    
+    Ingredient *ing = [NSEntityDescription insertNewObjectForEntityForName:@"Ingredient" inManagedObjectContext:managedObjectContext];
+    ing.name = @"cherrios";
+    
+    Category *c = [NSEntityDescription insertNewObjectForEntityForName:@"Category" inManagedObjectContext:managedObjectContext];
+    c.name = @"Carbs";
+    
+    Recipe *r = [NSEntityDescription insertNewObjectForEntityForName:@"Recipe" inManagedObjectContext:managedObjectContext];
+    r.name = @"O's";
+    r.blurb = @"Everyone loves O's";
+    r.steps = @"1. Buy O's\n2. Pour O's";
+    [r addAgerangesObject:age];
+    [r addIngredientsObject:ing];
+    [r addCategoriesObject:c];
+    
+    NSError *error;
+    if (![managedObjectContext save:&error]) {
+        [[NSApplication sharedApplication] presentError:error];
+    }
+    
 }
 
 @end

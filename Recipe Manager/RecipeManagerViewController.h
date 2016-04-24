@@ -9,7 +9,6 @@
 #import <Cocoa/Cocoa.h>
 
 @interface RecipeManagerViewController : NSViewController
-
-
+@property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 @end
 
