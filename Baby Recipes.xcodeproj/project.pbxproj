@@ -7,6 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		350333851CC3FD7300E7129D /* AgeRange+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 350333761CC3FD7300E7129D /* AgeRange+CoreDataProperties.m */; };
+		350333861CC3FD7300E7129D /* AgeRange+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 350333761CC3FD7300E7129D /* AgeRange+CoreDataProperties.m */; };
+		350333871CC3FD7300E7129D /* AgeRange.m in Sources */ = {isa = PBXBuildFile; fileRef = 350333781CC3FD7300E7129D /* AgeRange.m */; };
+		350333881CC3FD7300E7129D /* AgeRange.m in Sources */ = {isa = PBXBuildFile; fileRef = 350333781CC3FD7300E7129D /* AgeRange.m */; };
+		350333891CC3FD7300E7129D /* Ingredient+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 3503337A1CC3FD7300E7129D /* Ingredient+CoreDataProperties.m */; };
+		3503338A1CC3FD7300E7129D /* Ingredient+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 3503337A1CC3FD7300E7129D /* Ingredient+CoreDataProperties.m */; };
+		3503338B1CC3FD7300E7129D /* Ingredient.m in Sources */ = {isa = PBXBuildFile; fileRef = 3503337C1CC3FD7300E7129D /* Ingredient.m */; };
+		3503338C1CC3FD7300E7129D /* Ingredient.m in Sources */ = {isa = PBXBuildFile; fileRef = 3503337C1CC3FD7300E7129D /* Ingredient.m */; };
+		3503338D1CC3FD7300E7129D /* Recipe+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 3503337E1CC3FD7300E7129D /* Recipe+CoreDataProperties.m */; };
+		3503338E1CC3FD7300E7129D /* Recipe+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 3503337E1CC3FD7300E7129D /* Recipe+CoreDataProperties.m */; };
+		3503338F1CC3FD7300E7129D /* Recipe.m in Sources */ = {isa = PBXBuildFile; fileRef = 350333801CC3FD7300E7129D /* Recipe.m */; };
+		350333901CC3FD7300E7129D /* Recipe.m in Sources */ = {isa = PBXBuildFile; fileRef = 350333801CC3FD7300E7129D /* Recipe.m */; };
+		350333911CC3FD7300E7129D /* Category+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 350333821CC3FD7300E7129D /* Category+CoreDataProperties.m */; };
+		350333921CC3FD7300E7129D /* Category+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 350333821CC3FD7300E7129D /* Category+CoreDataProperties.m */; };
+		350333931CC3FD7300E7129D /* Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 350333841CC3FD7300E7129D /* Category.m */; };
+		350333941CC3FD7300E7129D /* Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 350333841CC3FD7300E7129D /* Category.m */; };
+		350333981CC402B500E7129D /* RecipeManagerWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 350333971CC402B500E7129D /* RecipeManagerWindowController.m */; };
 		35B97FBC1CB5FB7600AE1FFA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B97FBB1CB5FB7600AE1FFA /* main.m */; };
 		35B97FBF1CB5FB7600AE1FFA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B97FBE1CB5FB7600AE1FFA /* AppDelegate.m */; };
 		35B97FC81CB5FB7600AE1FFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35B97FC61CB5FB7600AE1FFA /* Main.storyboard */; };
@@ -15,9 +32,34 @@
 		35B97FD91CB5FE1800AE1FFA /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B97FD81CB5FE1800AE1FFA /* HomeViewController.m */; };
 		35B97FE21CB6017B00AE1FFA /* RecipeListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B97FE11CB6017B00AE1FFA /* RecipeListViewController.m */; };
 		35B97FE51CB6036500AE1FFA /* RecipeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B97FE41CB6036500AE1FFA /* RecipeViewController.m */; };
+		35F253011CBC911D003D249A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 35F253001CBC911D003D249A /* AppDelegate.m */; };
+		35F253041CBC911D003D249A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 35F253031CBC911D003D249A /* main.m */; };
+		35F253071CBC911D003D249A /* RecipeManagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35F253061CBC911D003D249A /* RecipeManagerViewController.m */; };
+		35F2530C1CBC911D003D249A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35F2530B1CBC911D003D249A /* Assets.xcassets */; };
+		35F2530F1CBC911D003D249A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35F2530D1CBC911D003D249A /* Main.storyboard */; };
+		35F253231CBCA007003D249A /* Recipes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 35F253211CBCA007003D249A /* Recipes.xcdatamodeld */; };
+		35F253241CBCA007003D249A /* Recipes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 35F253211CBCA007003D249A /* Recipes.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		350333751CC3FD7300E7129D /* AgeRange+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "AgeRange+CoreDataProperties.h"; path = "Shared/AgeRange+CoreDataProperties.h"; sourceTree = "<group>"; };
+		350333761CC3FD7300E7129D /* AgeRange+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "AgeRange+CoreDataProperties.m"; path = "Shared/AgeRange+CoreDataProperties.m"; sourceTree = "<group>"; };
+		350333771CC3FD7300E7129D /* AgeRange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AgeRange.h; path = Shared/AgeRange.h; sourceTree = "<group>"; };
+		350333781CC3FD7300E7129D /* AgeRange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AgeRange.m; path = Shared/AgeRange.m; sourceTree = "<group>"; };
+		350333791CC3FD7300E7129D /* Ingredient+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Ingredient+CoreDataProperties.h"; path = "Shared/Ingredient+CoreDataProperties.h"; sourceTree = "<group>"; };
+		3503337A1CC3FD7300E7129D /* Ingredient+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Ingredient+CoreDataProperties.m"; path = "Shared/Ingredient+CoreDataProperties.m"; sourceTree = "<group>"; };
+		3503337B1CC3FD7300E7129D /* Ingredient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Ingredient.h; path = Shared/Ingredient.h; sourceTree = "<group>"; };
+		3503337C1CC3FD7300E7129D /* Ingredient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Ingredient.m; path = Shared/Ingredient.m; sourceTree = "<group>"; };
+		3503337D1CC3FD7300E7129D /* Recipe+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Recipe+CoreDataProperties.h"; path = "Shared/Recipe+CoreDataProperties.h"; sourceTree = "<group>"; };
+		3503337E1CC3FD7300E7129D /* Recipe+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Recipe+CoreDataProperties.m"; path = "Shared/Recipe+CoreDataProperties.m"; sourceTree = "<group>"; };
+		3503337F1CC3FD7300E7129D /* Recipe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Recipe.h; path = Shared/Recipe.h; sourceTree = "<group>"; };
+		350333801CC3FD7300E7129D /* Recipe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Recipe.m; path = Shared/Recipe.m; sourceTree = "<group>"; };
+		350333811CC3FD7300E7129D /* Category+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Category+CoreDataProperties.h"; path = "Shared/Category+CoreDataProperties.h"; sourceTree = "<group>"; };
+		350333821CC3FD7300E7129D /* Category+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Category+CoreDataProperties.m"; path = "Shared/Category+CoreDataProperties.m"; sourceTree = "<group>"; };
+		350333831CC3FD7300E7129D /* Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Category.h; path = Shared/Category.h; sourceTree = "<group>"; };
+		350333841CC3FD7300E7129D /* Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Category.m; path = Shared/Category.m; sourceTree = "<group>"; };
+		350333961CC402B500E7129D /* RecipeManagerWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipeManagerWindowController.h; sourceTree = "<group>"; };
+		350333971CC402B500E7129D /* RecipeManagerWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipeManagerWindowController.m; sourceTree = "<group>"; };
 		35B97FB71CB5FB7600AE1FFA /* Baby Recipes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Baby Recipes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		35B97FBB1CB5FB7600AE1FFA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		35B97FBD1CB5FB7600AE1FFA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -32,6 +74,17 @@
 		35B97FE11CB6017B00AE1FFA /* RecipeListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipeListViewController.m; sourceTree = "<group>"; };
 		35B97FE31CB6036500AE1FFA /* RecipeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipeViewController.h; sourceTree = "<group>"; };
 		35B97FE41CB6036500AE1FFA /* RecipeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipeViewController.m; sourceTree = "<group>"; };
+		35F252FD1CBC911D003D249A /* Recipe Manager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Recipe Manager.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		35F252FF1CBC911D003D249A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		35F253001CBC911D003D249A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		35F253031CBC911D003D249A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		35F253051CBC911D003D249A /* RecipeManagerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RecipeManagerViewController.h; sourceTree = "<group>"; };
+		35F253061CBC911D003D249A /* RecipeManagerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecipeManagerViewController.m; sourceTree = "<group>"; };
+		35F2530B1CBC911D003D249A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		35F2530E1CBC911D003D249A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		35F253101CBC911D003D249A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		35F253221CBCA007003D249A /* Recipes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Recipes.xcdatamodel; sourceTree = "<group>"; };
+		35F253251CBCA36D003D249A /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,13 +95,46 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		35F252FA1CBC911D003D249A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		350333951CC3FDAC00E7129D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				350333751CC3FD7300E7129D /* AgeRange+CoreDataProperties.h */,
+				350333761CC3FD7300E7129D /* AgeRange+CoreDataProperties.m */,
+				350333771CC3FD7300E7129D /* AgeRange.h */,
+				350333781CC3FD7300E7129D /* AgeRange.m */,
+				350333791CC3FD7300E7129D /* Ingredient+CoreDataProperties.h */,
+				3503337A1CC3FD7300E7129D /* Ingredient+CoreDataProperties.m */,
+				3503337B1CC3FD7300E7129D /* Ingredient.h */,
+				3503337C1CC3FD7300E7129D /* Ingredient.m */,
+				3503337D1CC3FD7300E7129D /* Recipe+CoreDataProperties.h */,
+				3503337E1CC3FD7300E7129D /* Recipe+CoreDataProperties.m */,
+				3503337F1CC3FD7300E7129D /* Recipe.h */,
+				350333801CC3FD7300E7129D /* Recipe.m */,
+				350333811CC3FD7300E7129D /* Category+CoreDataProperties.h */,
+				350333821CC3FD7300E7129D /* Category+CoreDataProperties.m */,
+				350333831CC3FD7300E7129D /* Category.h */,
+				350333841CC3FD7300E7129D /* Category.m */,
+			);
+			name = Model;
+			path = ..;
+			sourceTree = "<group>";
+		};
 		35B97FAE1CB5FB7600AE1FFA = {
 			isa = PBXGroup;
 			children = (
+				35F2531C1CBC9666003D249A /* Shared */,
 				35B97FB91CB5FB7600AE1FFA /* Baby Recipes */,
+				35F252FE1CBC911D003D249A /* Recipe Manager */,
 				35B97FB81CB5FB7600AE1FFA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -57,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				35B97FB71CB5FB7600AE1FFA /* Baby Recipes.app */,
+				35F252FD1CBC911D003D249A /* Recipe Manager.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -89,6 +176,41 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		35F252FE1CBC911D003D249A /* Recipe Manager */ = {
+			isa = PBXGroup;
+			children = (
+				35F252FF1CBC911D003D249A /* AppDelegate.h */,
+				35F253001CBC911D003D249A /* AppDelegate.m */,
+				350333961CC402B500E7129D /* RecipeManagerWindowController.h */,
+				350333971CC402B500E7129D /* RecipeManagerWindowController.m */,
+				35F253051CBC911D003D249A /* RecipeManagerViewController.h */,
+				35F253061CBC911D003D249A /* RecipeManagerViewController.m */,
+				35F2530B1CBC911D003D249A /* Assets.xcassets */,
+				35F2530D1CBC911D003D249A /* Main.storyboard */,
+				35F253101CBC911D003D249A /* Info.plist */,
+				35F253021CBC911D003D249A /* Supporting Files */,
+			);
+			path = "Recipe Manager";
+			sourceTree = "<group>";
+		};
+		35F253021CBC911D003D249A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				35F253031CBC911D003D249A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		35F2531C1CBC9666003D249A /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				35F253211CBCA007003D249A /* Recipes.xcdatamodeld */,
+				350333951CC3FDAC00E7129D /* Model */,
+				35F253251CBCA36D003D249A /* Constants.h */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -109,6 +231,23 @@
 			productReference = 35B97FB71CB5FB7600AE1FFA /* Baby Recipes.app */;
 			productType = "com.apple.product-type.application";
 		};
+		35F252FC1CBC911D003D249A /* Recipe Manager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 35F253111CBC911D003D249A /* Build configuration list for PBXNativeTarget "Recipe Manager" */;
+			buildPhases = (
+				35F252F91CBC911D003D249A /* Sources */,
+				35F252FA1CBC911D003D249A /* Frameworks */,
+				35F252FB1CBC911D003D249A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Recipe Manager";
+			productName = "Recipe Manager";
+			productReference = 35F252FD1CBC911D003D249A /* Recipe Manager.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -119,6 +258,9 @@
 				ORGANIZATIONNAME = "Christine Gregori";
 				TargetAttributes = {
 					35B97FB61CB5FB7600AE1FFA = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					35F252FC1CBC911D003D249A = {
 						CreatedOnToolsVersion = 7.3;
 					};
 				};
@@ -137,6 +279,7 @@
 			projectRoot = "";
 			targets = (
 				35B97FB61CB5FB7600AE1FFA /* Baby Recipes */,
+				35F252FC1CBC911D003D249A /* Recipe Manager */,
 			);
 		};
 /* End PBXProject section */
@@ -152,6 +295,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		35F252FB1CBC911D003D249A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35F2530C1CBC911D003D249A /* Assets.xcassets in Resources */,
+				35F2530F1CBC911D003D249A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -163,7 +315,36 @@
 				35B97FBF1CB5FB7600AE1FFA /* AppDelegate.m in Sources */,
 				35B97FBC1CB5FB7600AE1FFA /* main.m in Sources */,
 				35B97FD91CB5FE1800AE1FFA /* HomeViewController.m in Sources */,
+				350333851CC3FD7300E7129D /* AgeRange+CoreDataProperties.m in Sources */,
 				35B97FE51CB6036500AE1FFA /* RecipeViewController.m in Sources */,
+				350333891CC3FD7300E7129D /* Ingredient+CoreDataProperties.m in Sources */,
+				350333931CC3FD7300E7129D /* Category.m in Sources */,
+				3503338F1CC3FD7300E7129D /* Recipe.m in Sources */,
+				350333911CC3FD7300E7129D /* Category+CoreDataProperties.m in Sources */,
+				3503338D1CC3FD7300E7129D /* Recipe+CoreDataProperties.m in Sources */,
+				35F253231CBCA007003D249A /* Recipes.xcdatamodeld in Sources */,
+				3503338B1CC3FD7300E7129D /* Ingredient.m in Sources */,
+				350333871CC3FD7300E7129D /* AgeRange.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35F252F91CBC911D003D249A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3503338C1CC3FD7300E7129D /* Ingredient.m in Sources */,
+				350333901CC3FD7300E7129D /* Recipe.m in Sources */,
+				35F253071CBC911D003D249A /* RecipeManagerViewController.m in Sources */,
+				35F253041CBC911D003D249A /* main.m in Sources */,
+				350333921CC3FD7300E7129D /* Category+CoreDataProperties.m in Sources */,
+				35F253011CBC911D003D249A /* AppDelegate.m in Sources */,
+				3503338A1CC3FD7300E7129D /* Ingredient+CoreDataProperties.m in Sources */,
+				350333941CC3FD7300E7129D /* Category.m in Sources */,
+				350333861CC3FD7300E7129D /* AgeRange+CoreDataProperties.m in Sources */,
+				3503338E1CC3FD7300E7129D /* Recipe+CoreDataProperties.m in Sources */,
+				35F253241CBCA007003D249A /* Recipes.xcdatamodeld in Sources */,
+				350333881CC3FD7300E7129D /* AgeRange.m in Sources */,
+				350333981CC402B500E7129D /* RecipeManagerWindowController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,6 +365,14 @@
 				35B97FCC1CB5FB7600AE1FFA /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		35F2530D1CBC911D003D249A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				35F2530E1CBC911D003D249A /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -295,6 +484,38 @@
 			};
 			name = Release;
 		};
+		35F253121CBC911D003D249A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = "PROJECT_PATH=@\\\"$(PROJECT_FILE_PATH)\\\"";
+				INFOPLIST_FILE = "Recipe Manager/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "Christine-Gregori.Recipe-Manager";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		35F253131CBC911D003D249A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = "PROJECT_PATH=@\\\"$(PROJECT_FILE_PATH)\\\"";
+				INFOPLIST_FILE = "Recipe Manager/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "Christine-Gregori.Recipe-Manager";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -314,8 +535,31 @@
 				35B97FD31CB5FB7600AE1FFA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		35F253111CBC911D003D249A /* Build configuration list for PBXNativeTarget "Recipe Manager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35F253121CBC911D003D249A /* Debug */,
+				35F253131CBC911D003D249A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		35F253211CBCA007003D249A /* Recipes.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				35F253221CBCA007003D249A /* Recipes.xcdatamodel */,
+			);
+			currentVersion = 35F253221CBCA007003D249A /* Recipes.xcdatamodel */;
+			path = Recipes.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 35B97FAF1CB5FB7600AE1FFA /* Project object */;
 }
