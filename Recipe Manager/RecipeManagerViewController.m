@@ -15,6 +15,7 @@
 
 @interface RecipeManagerViewController ()
 @property (strong) IBOutlet NSArrayController *arrayController;
+@property (weak) IBOutlet NSTableView *tableView;
 
 @end
 
@@ -42,9 +43,24 @@
 }
 
 - (IBAction)newRecipe:(id)sender {
+    AgeRange *age = [NSEntityDescription insertNewObjectForEntityForName:@"AgeRange" inManagedObjectContext:self.managedObjectContext];
+    age.name = @"6-12 months";
+    
+    Ingredient *ing = [NSEntityDescription insertNewObjectForEntityForName:@"Ingredient" inManagedObjectContext:self.managedObjectContext];
+    ing.name = @"cherrios";
+    
+    Category *c = [NSEntityDescription insertNewObjectForEntityForName:@"Category" inManagedObjectContext:self.managedObjectContext];
+    c.name = @"Carbs";
+    
     Recipe *r = [NSEntityDescription insertNewObjectForEntityForName:@"Recipe" inManagedObjectContext:self.managedObjectContext];\
     r.name = @"New Recipe";
+    
+    [r addAgerangesObject:age];
+    [r addIngredientsObject:ing];
+    [r addCategoriesObject:c];
+    
     [self.arrayController addObject:r];
+    [self.tableView scrollRowToVisible:self.arrayController.selectionIndex];
 }
 
 - (void)addTestRecipe {

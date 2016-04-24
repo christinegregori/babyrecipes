@@ -663,6 +663,7 @@
                     </view>
                     <connections>
                         <outlet property="arrayController" destination="UWu-ni-JSo" id="UCZ-74-dQD"/>
+                        <outlet property="tableView" destination="evR-dp-JS8" id="XW2-cr-SBF"/>
                     </connections>
                 </viewController>
                 <arrayController mode="entity" entityName="Recipe" automaticallyPreparesContent="YES" automaticallyRearrangesObjects="YES" id="UWu-ni-JSo" userLabel="RecipesArrayController">
