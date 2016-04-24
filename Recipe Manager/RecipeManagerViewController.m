@@ -44,16 +44,14 @@
 
 #pragma mark - Control Stuff
 
-- (BOOL)validateMenuItem:(NSMenuItem *)menuItem {
-    if ([menuItem.title isEqualToString:@"New Recipe"]) {
-        return [self isCurrentSelectionValid];
-    }
-    return [super validateMenuItem:menuItem];
-}
-
 #pragma mark - Recipes
 
 - (IBAction)newRecipe:(id)sender {
+    if (![self validateCurrentSelection]) {
+        // you cant make a new recipe if the current one is not valid
+        return;
+    }
+    
     AgeRange *age = [NSEntityDescription insertNewObjectForEntityForName:@"AgeRange" inManagedObjectContext:self.managedObjectContext];
     age.name = @"Fake Age";
     
@@ -85,7 +83,7 @@
 }
 
 - (BOOL)validateCurrentSelection {
-    Recipe *r = self.arrayController.selection;
+    Recipe *r = self.arrayController.arrangedObjects[self.arrayController.selectionIndex];
     if (!r) {
         return YES;
     }
