@@ -13,7 +13,7 @@
 #import "Ingredient.h"
 #import "Recipe.h"
 
-@interface RecipeManagerViewController ()
+@interface RecipeManagerViewController () <NSTableViewDelegate>
 @property (strong) IBOutlet NSArrayController *arrayController;
 @property (weak) IBOutlet NSTableView *tableView;
 
@@ -72,8 +72,15 @@
     [self.tableView scrollRowToVisible:self.arrayController.selectionIndex];
 }
 
+- (Recipe *)currentlySelectedRecipe {
+    if (self.arrayController.selectionIndex != NSNotFound) {
+        return self.arrayController.arrangedObjects[self.arrayController.selectionIndex];
+    }
+    return nil;
+}
+
 - (BOOL)isCurrentSelectionValid {
-    Recipe *r = self.arrayController.arrangedObjects[self.arrayController.selectionIndex];
+    Recipe *r = [self currentlySelectedRecipe];
     if (!r) {
         return YES;
     }
@@ -83,7 +90,7 @@
 }
 
 - (BOOL)validateCurrentSelection {
-    Recipe *r = self.arrayController.arrangedObjects[self.arrayController.selectionIndex];
+    Recipe *r = [self currentlySelectedRecipe];
     if (!r) {
         return YES;
     }
@@ -118,6 +125,12 @@
     if (![self.managedObjectContext save:&error]) {
         [[NSApplication sharedApplication] presentError:error];
     }
+}
+
+#pragma mark - NSTableViewDelegate
+
+- (BOOL)selectionShouldChangeInTableView:(NSTableView *)tableView {
+    return [self validateCurrentSelection];
 }
 
 @end
