@@ -42,15 +42,26 @@
 //    [self addTestRecipe];
 }
 
+#pragma mark - Control Stuff
+
+- (BOOL)validateMenuItem:(NSMenuItem *)menuItem {
+    if ([menuItem.title isEqualToString:@"New Recipe"]) {
+        return [self isCurrentSelectionValid];
+    }
+    return [super validateMenuItem:menuItem];
+}
+
+#pragma mark - Recipes
+
 - (IBAction)newRecipe:(id)sender {
     AgeRange *age = [NSEntityDescription insertNewObjectForEntityForName:@"AgeRange" inManagedObjectContext:self.managedObjectContext];
-    age.name = @"6-12 months";
+    age.name = @"Fake Age";
     
     Ingredient *ing = [NSEntityDescription insertNewObjectForEntityForName:@"Ingredient" inManagedObjectContext:self.managedObjectContext];
-    ing.name = @"cherrios";
+    ing.name = @"Fake Ingredient";
     
     Category *c = [NSEntityDescription insertNewObjectForEntityForName:@"Category" inManagedObjectContext:self.managedObjectContext];
-    c.name = @"Carbs";
+    c.name = @"Fake Category";
     
     Recipe *r = [NSEntityDescription insertNewObjectForEntityForName:@"Recipe" inManagedObjectContext:self.managedObjectContext];\
     r.name = @"New Recipe";
@@ -61,6 +72,29 @@
     
     [self.arrayController addObject:r];
     [self.tableView scrollRowToVisible:self.arrayController.selectionIndex];
+}
+
+- (BOOL)isCurrentSelectionValid {
+    Recipe *r = self.arrayController.arrangedObjects[self.arrayController.selectionIndex];
+    if (!r) {
+        return YES;
+    }
+    NSError *error;
+    BOOL valid = [r validateForUpdate:&error];
+    return valid;
+}
+
+- (BOOL)validateCurrentSelection {
+    Recipe *r = self.arrayController.selection;
+    if (!r) {
+        return YES;
+    }
+    NSError *error;
+    if (![r validateForUpdate:&error]) {
+        [[NSApplication sharedApplication] presentError:error];
+        return NO;
+    }
+    return YES;
 }
 
 - (void)addTestRecipe {

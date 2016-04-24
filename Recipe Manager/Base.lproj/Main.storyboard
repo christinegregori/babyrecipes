@@ -541,8 +541,9 @@
                                                                     <size key="minSize" width="378" height="139"/>
                                                                     <size key="maxSize" width="463" height="10000000"/>
                                                                     <connections>
-                                                                        <binding destination="UWu-ni-JSo" name="value" keyPath="selection.blurb" id="aS8-bw-dCG">
+                                                                        <binding destination="UWu-ni-JSo" name="value" keyPath="selection.blurb" id="iBc-vy-PJx">
                                                                             <dictionary key="options">
+                                                                                <bool key="NSContinuouslyUpdatesValue" value="YES"/>
                                                                                 <bool key="NSRaisesForNotApplicableKeys" value="NO"/>
                                                                             </dictionary>
                                                                         </binding>
@@ -597,8 +598,9 @@
                                                                     <size key="minSize" width="378" height="139"/>
                                                                     <size key="maxSize" width="463" height="10000000"/>
                                                                     <connections>
-                                                                        <binding destination="UWu-ni-JSo" name="value" keyPath="selection.steps" id="8cS-d6-tR9">
+                                                                        <binding destination="UWu-ni-JSo" name="value" keyPath="selection.steps" id="r45-GP-X4y">
                                                                             <dictionary key="options">
+                                                                                <bool key="NSContinuouslyUpdatesValue" value="YES"/>
                                                                                 <bool key="NSRaisesForNotApplicableKeys" value="NO"/>
                                                                             </dictionary>
                                                                         </binding>
