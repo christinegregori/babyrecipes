@@ -41,6 +41,12 @@
 //    [self addTestRecipe];
 }
 
+- (IBAction)newRecipe:(id)sender {
+    Recipe *r = [NSEntityDescription insertNewObjectForEntityForName:@"Recipe" inManagedObjectContext:self.managedObjectContext];\
+    r.name = @"New Recipe";
+    [self.arrayController addObject:r];
+}
+
 - (void)addTestRecipe {
     // add a test object
     AgeRange *age = [NSEntityDescription insertNewObjectForEntityForName:@"AgeRange" inManagedObjectContext:self.managedObjectContext];
