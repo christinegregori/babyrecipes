@@ -362,7 +362,7 @@
                                                     <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
                                                     <tableColumns>
                                                         <tableColumn editable="NO" width="351.73046875" minWidth="40" maxWidth="1000" id="0eH-pT-Yci">
-                                                            <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" title="Name">
+                                                            <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" title="Recipes">
                                                                 <font key="font" metaFont="smallSystem"/>
                                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                                 <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
@@ -375,7 +375,7 @@
                                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                             <prototypeCellViews>
                                                                 <tableCellView id="CPt-Ec-Q1i">
-                                                                    <rect key="frame" x="1" y="1" width="351.5" height="17"/>
+                                                                    <rect key="frame" x="1" y="1" width="352" height="17"/>
                                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                                     <subviews>
                                                                         <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RRR-Be-WI8">
@@ -384,6 +384,9 @@
                                                                                 <font key="font" metaFont="system"/>
                                                                                 <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                                                <connections>
+                                                                                    <binding destination="CPt-Ec-Q1i" name="value" keyPath="objectValue.name" id="Ywp-Mm-Naw"/>
+                                                                                </connections>
                                                                             </textFieldCell>
                                                                         </textField>
                                                                     </subviews>
@@ -393,7 +396,7 @@
                                                                 </tableCellView>
                                                             </prototypeCellViews>
                                                             <connections>
-                                                                <binding destination="UWu-ni-JSo" name="value" keyPath="arrangedObjects.name" id="2LK-bW-MJw">
+                                                                <binding destination="UWu-ni-JSo" name="value" keyPath="arrangedObjects.name" id="dW4-R5-UW1">
                                                                     <dictionary key="options">
                                                                         <bool key="NSAllowsEditingMultipleValuesSelection" value="NO"/>
                                                                     </dictionary>
@@ -414,7 +417,7 @@
                                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                             <prototypeCellViews>
                                                                 <tableCellView id="NOr-ui-PSE">
-                                                                    <rect key="frame" x="355.5" y="1" width="149.5" height="17"/>
+                                                                    <rect key="frame" x="355.5" y="1" width="150" height="17"/>
                                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                                     <subviews>
                                                                         <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Agm-7G-VA6">
@@ -424,6 +427,9 @@
                                                                                 <font key="font" metaFont="system"/>
                                                                                 <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                                                <connections>
+                                                                                    <binding destination="NOr-ui-PSE" name="value" keyPath="objectValue.dateUpdated" id="5MN-dR-VnR"/>
+                                                                                </connections>
                                                                             </textFieldCell>
                                                                         </textField>
                                                                     </subviews>
@@ -433,9 +439,9 @@
                                                                 </tableCellView>
                                                             </prototypeCellViews>
                                                             <connections>
-                                                                <binding destination="UWu-ni-JSo" name="value" keyPath="arrangedObjects.dateUpdated" id="QjB-ba-3Iq">
+                                                                <binding destination="UWu-ni-JSo" name="value" keyPath="arrangedObjects.dateUpdated" id="xyh-Mc-LXZ">
                                                                     <dictionary key="options">
-                                                                        <bool key="NSConditionallySetsEditable" value="YES"/>
+                                                                        <bool key="NSAllowsEditingMultipleValuesSelection" value="NO"/>
                                                                     </dictionary>
                                                                 </binding>
                                                             </connections>
@@ -484,7 +490,7 @@
                     </connections>
                 </arrayController>
             </objects>
-            <point key="canvasLocation" x="89.5" y="789.5"/>
+            <point key="canvasLocation" x="75.5" y="808.5"/>
         </scene>
     </scenes>
 </document>

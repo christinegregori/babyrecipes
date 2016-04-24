@@ -24,17 +24,21 @@
 - (void)setManagedObjectContext:(NSManagedObjectContext *)managedObjectContext {
     _managedObjectContext = managedObjectContext;
     
+//    [self addTestRecipe];
+}
+
+- (void)addTestRecipe {
     // add a test object
-    AgeRange *age = [NSEntityDescription insertNewObjectForEntityForName:@"AgeRange" inManagedObjectContext:managedObjectContext];
+    AgeRange *age = [NSEntityDescription insertNewObjectForEntityForName:@"AgeRange" inManagedObjectContext:self.managedObjectContext];
     age.name = @"6-12 months";
     
-    Ingredient *ing = [NSEntityDescription insertNewObjectForEntityForName:@"Ingredient" inManagedObjectContext:managedObjectContext];
+    Ingredient *ing = [NSEntityDescription insertNewObjectForEntityForName:@"Ingredient" inManagedObjectContext:self.managedObjectContext];
     ing.name = @"cherrios";
     
-    Category *c = [NSEntityDescription insertNewObjectForEntityForName:@"Category" inManagedObjectContext:managedObjectContext];
+    Category *c = [NSEntityDescription insertNewObjectForEntityForName:@"Category" inManagedObjectContext:self.managedObjectContext];
     c.name = @"Carbs";
     
-    Recipe *r = [NSEntityDescription insertNewObjectForEntityForName:@"Recipe" inManagedObjectContext:managedObjectContext];
+    Recipe *r = [NSEntityDescription insertNewObjectForEntityForName:@"Recipe" inManagedObjectContext:self.managedObjectContext];
     r.name = @"O's";
     r.blurb = @"Everyone loves O's";
     r.steps = @"1. Buy O's\n2. Pour O's";
@@ -43,10 +47,9 @@
     [r addCategoriesObject:c];
     
     NSError *error;
-    if (![managedObjectContext save:&error]) {
+    if (![self.managedObjectContext save:&error]) {
         [[NSApplication sharedApplication] presentError:error];
     }
-    
 }
 
 @end
