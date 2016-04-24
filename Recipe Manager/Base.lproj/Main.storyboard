@@ -448,9 +448,6 @@
                                                             </connections>
                                                         </tableColumn>
                                                     </tableColumns>
-                                                    <connections>
-                                                        <binding destination="UWu-ni-JSo" name="selectionIndexes" keyPath="selectionIndexes" id="pY3-dB-VwH"/>
-                                                    </connections>
                                                 </tableView>
                                             </subviews>
                                             <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -527,7 +524,7 @@
                                                             <rect key="frame" x="1" y="1" width="451" height="266"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                             <subviews>
-                                                                <textView importsGraphics="NO" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" usesFontPanel="YES" verticallyResizable="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" spellingCorrection="YES" smartInsertDelete="YES" id="A4K-DJ-usz">
+                                                                <textView importsGraphics="NO" richText="NO" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" usesFontPanel="YES" verticallyResizable="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" spellingCorrection="YES" smartInsertDelete="YES" id="A4K-DJ-usz">
                                                                     <rect key="frame" x="0.0" y="0.0" width="451" height="266"/>
                                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -536,6 +533,13 @@
                                                                     <color key="insertionPointColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                                                     <size key="minSize" width="451" height="266"/>
                                                                     <size key="maxSize" width="463" height="10000000"/>
+                                                                    <connections>
+                                                                        <binding destination="UWu-ni-JSo" name="value" keyPath="selection.blurb" id="aS8-bw-dCG">
+                                                                            <dictionary key="options">
+                                                                                <bool key="NSRaisesForNotApplicableKeys" value="NO"/>
+                                                                            </dictionary>
+                                                                        </binding>
+                                                                    </connections>
                                                                 </textView>
                                                             </subviews>
                                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
