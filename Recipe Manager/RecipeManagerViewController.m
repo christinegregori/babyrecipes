@@ -13,12 +13,26 @@
 #import "Ingredient.h"
 #import "Recipe.h"
 
+@interface RecipeManagerViewController ()
+@property (strong) IBOutlet NSArrayController *arrayController;
+
+@end
+
 @implementation RecipeManagerViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
 
     // Do any additional setup after loading the view.
+}
+
+- (void)viewDidAppear {
+    [super viewDidAppear];
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        NSArrayController *c = self.arrayController;
+        NSLog(@"%@", c);
+    });
 }
 
 - (void)setManagedObjectContext:(NSManagedObjectContext *)managedObjectContext {
