@@ -10,7 +10,7 @@
 #define Constants_h
 
 #define MOMDName @"Recipes"
-#define StoreName @"recipes.storedata"
+#define StoreName @"Recipes Database.storedata"
 
 
 #endif /* Constants_h */

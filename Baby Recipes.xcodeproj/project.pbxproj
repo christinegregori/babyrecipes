@@ -60,6 +60,7 @@
 		350333841CC3FD7300E7129D /* Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Category.m; path = Shared/Category.m; sourceTree = "<group>"; };
 		350333961CC402B500E7129D /* RecipeManagerWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipeManagerWindowController.h; sourceTree = "<group>"; };
 		350333971CC402B500E7129D /* RecipeManagerWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipeManagerWindowController.m; sourceTree = "<group>"; };
+		350A239B1CCD288D009DD6D9 /* Recipes Database.storedata */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Recipes Database.storedata"; sourceTree = "<group>"; };
 		35B97FB71CB5FB7600AE1FFA /* Baby Recipes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Baby Recipes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		35B97FBB1CB5FB7600AE1FFA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		35B97FBD1CB5FB7600AE1FFA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -205,6 +206,7 @@
 			isa = PBXGroup;
 			children = (
 				35F253211CBCA007003D249A /* Recipes.xcdatamodeld */,
+				350A239B1CCD288D009DD6D9 /* Recipes Database.storedata */,
 				350333951CC3FDAC00E7129D /* Model */,
 				35F253251CBCA36D003D249A /* Constants.h */,
 			);
