@@ -110,6 +110,8 @@
     
     NSError *error = nil;
     if ([[self managedObjectContext] hasChanges] && ![[self managedObjectContext] save:&error]) {
+        
+        
         [[NSApplication sharedApplication] presentError:error];
     }
 }
